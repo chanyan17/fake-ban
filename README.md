@@ -18,7 +18,7 @@
 4. 运行开发模式
     * npm run dev
 
-#### 使用vw实现移动端适配([参考资源] (https://www.w3cplus.com/mobile/vw-layout-in-vue.html))
+#### 使用vw实现移动端适配 ( [参考资源](https://www.w3cplus.com/mobile/vw-layout-in-vue.html) )
 1. `npm install --S`安装PostCSS插件
     ```
     "dependencies": {
@@ -85,3 +85,18 @@
         };
     </script>
     ```
+#### 添加CSS预处理语言：Less
+1. 安装`npm install less less-loader --save-dev`
+
+2. 在`build/webpack.base.conf.js`里配置loader加载依赖
+    ```
+    modules: {
+        rules: [
+            // ...其他的loader
+            {
+                test: /\.less$/,
+                loader: "style-loader!css-loader!less-loader",
+            }
+        ]
+    ```
+3. 在style标签里加上`lang="less"`里面就可以写less的代码了
