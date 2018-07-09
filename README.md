@@ -100,3 +100,8 @@
         ]
     ```
 3. 在style标签里加上`lang="less"`里面就可以写less的代码了
+
+#### 引入font-awesome字体图标
+1. 安装`npm install font-awesome --save`
+
+2. 在`main.js`引入`import 'font-awesome/css/font-awesome.min.css'`
