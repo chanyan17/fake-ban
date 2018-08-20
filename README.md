@@ -105,3 +105,10 @@
 1. 安装`npm install font-awesome --save`
 
 2. 在`main.js`引入`import 'font-awesome/css/font-awesome.min.css'`
+
+#### 加入vconsole调试
+1. 安装`npm install vconsole --s-dev`
+
+2. 在`src/assets`目录下创建个`util`文件夹，并在里新建一个文件`vconsole.js`
+
+3. 在`main.js`中全局引用`require('./assets/util/vconsole.js')`

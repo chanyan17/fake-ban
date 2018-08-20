@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import 'font-awesome/css/font-awesome.min.css'
+require('./assets/util/vconsole.js')
 
 Vue.config.productionTip = false
 

@@ -1,7 +1,7 @@
 <template>
     <div class="film-item">
         <div class="film-cover">
-            <img src="../assets/logo.png" alt="">
+            <img :src="require('../assets/post.jpg')" alt="">
         </div>
         <div class="film-name">我不是药神</div>
         <div class="film-star">
@@ -14,7 +14,8 @@
 export default {
     name: 'FilmItem',
     data() {
-        return {}
+        return {
+        }
     }
 }
 </script>
